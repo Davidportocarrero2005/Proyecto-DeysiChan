@@ -1,0 +1,503 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+li {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.main-movie-img {
+    max-height: 500px;
+    /* Altura máxima */
+    width: auto;
+    /* Mantiene la proporción de la imagen */
+    object-fit: cover;
+    /* Recorta la imagen si es necesario, manteniendo la proporción */
+    margin-bottom: 25px;
+}
+
+#flower-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.flower {
+    position: absolute;
+    width: 50px;
+    /* Puedes ajustar el tamaño */
+    height: 50px;
+    background-image: url('../proyectoCine/public/girasoles.jpeg');
+    /* Ruta de la imagen de la flor */
+    background-size: cover;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+li:hover {
+    color: #E50246;
+    transition-duration: 100ms;
+    cursor: pointer;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.3s;
+    padding: 15px 0;
+}
+
+.header-content {
+    width: 70%;
+}
+
+#main-logo {
+    width: 180px;
+}
+
+.hea .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -20px;
+    left: 0;
+    background-color: red;
+    visibility: hidden;
+}
+
+.nav-link:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.red-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #E50246;
+    width: 268.99px;
+    height: 94px;
+}
+
+.movie-title {
+    font-size: 70px;
+    line-height: 1;
+}
+
+.parent-div {
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+    padding: 18px 0;
+}
+
+.custom-shadow-btn {
+    box-shadow: 0px 4px 6px rgba(0, 0, 255, 0.1);
+    /* Sombra azul */
+}
+
+.dropdown--select {
+    border: none;
+    /* Elimina el borde del selector */
+
+}
+
+.border--div {
+    border-right: 1px solid rgb(153, 153, 153);
+}
+
+.candy-store-landing--selector-wrapper {
+    display: inline-block;
+    margin-right: 30px;
+    width: 273px;
+    border-block-end: 1px solid rgb(153, 153, 153);
+}
+
+.btn-custom-sm {
+    width: 300px;
+    /* Ancho */
+    height: 40px;
+    /* Alto */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    background-color: #e50246;
+    border-radius: 50px;
+}
+
+.container--div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full height of the viewport */
+}
+
+.responsive-container {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    background-color: #f8f9fa;
+}
+
+.container--cines {
+    width: 90%;
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    border-top: 1px solid rgb(153, 153, 153);
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.button-border {
+    border-right: 1px solid rgb(153, 153, 153);
+    border-left: 1px solid rgb(153, 153, 153);
+}
+
+.content--cines,
+.map {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.container--div-cines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .offcanvas {
+        flex-grow: 0;
+    }
+
+    .main-content {
+        width: 65%;
+    }
+
+    .responsive-container {
+        width: 50%;
+    }
+
+    iframe {
+        border: 0;
+        /* Quitar borde del iframe */
+        width: 800px;
+        /* Ancho del mapa */
+        height: 450px;
+        /* Altura del mapa */
+    }
+
+    .carousel-img-main {
+        width: 30%;
+    }
+}
+
+@media (max-width:992px) {
+    .header-content {
+        width: 90%;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+
+    .text-content h1 {
+        font-size: 32px;
+        /* Cambiar el tamaño del texto en pantallas pequeñas */
+    }
+
+    .red-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #E50246;
+        width: 180px;
+        height: 50px;
+    }
+
+    .full-width-top {
+        width: 100%;
+        height: 300px;
+        /* Ajusta esta altura según tus necesidades */
+        object-fit: cover;
+    }
+
+    .responsive-container {
+        width: 90%;
+    }
+
+    iframe {
+        border: 0;
+        /* Quitar borde del iframe */
+        width: 400px;
+        /* Ancho del mapa */
+        height: 450px;
+        /* Altura del mapa */
+    }
+
+    .carousel-img-main {
+        width: 70%;
+    }
+}
+
+#chica {
+    object-fit: cover;
+    width: 60%;
+    height: 60%;
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.main-content {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.text-pelicula {
+    font-size: 75px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: darkgrey;
+}
+
+
+
+.p-welcome {
+    font-size: 25px;
+}
+
+.separator {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+}
+
+.img-movie {
+    object-fit: cover;
+    width: 100%;
+}
+
+.footer {
+    font-size: 14px;
+    border-bottom-width: 10px;
+    border-bottom: #e50246;
+    background-color: #0D1F40;
+}
+
+footer {
+    color: white;
+}
+
+footer ul {
+    font-weight: 100;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+}
+
+.btn-footer-contact {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    text-align: start;
+    font-weight: bold;
+    transition-duration: 200ms;
+}
+
+#letter {
+    width: 30px;
+}
+
+#reclamation-book {
+    width: 30px;
+    color: white;
+}
+
+.social-icon:hover {
+    scale: 1.1;
+    transition-duration: 100ms;
+}
+
+.header-icon:hover {
+    scale: 1.1;
+    transition-duration: 100ms;
+    cursor: pointer;
+}
+
+.img-market:hover {
+    scale: 1.1;
+    transition-duration: 100ms;
+}
+
+#reclamation-book:hover {
+    scale: 1.1;
+    transition-duration: 100ms;
+}
+
+#filters-icon {
+    width: 20px;
+    color: black;
+
+}
+
+.footer article h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-footer-contact:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.img-promo-bg {
+    right: 10%;
+    top: 10%;
+    width: 95%;
+    height: 95%;
+}
+
+.text-promo {
+    color: #004a8c;
+    font-size: 50px;
+}
+
+.title-movies {
+    font-size: 60px;
+    color: #004a8c;
+    font-weight: bolder;
+}
+
+p {
+    margin: 0;
+}
+
+.collapse {
+    width: max-content;
+}
+
+/* .filters-container {
+    width: max-content;
+} */
+
+.movie-img-table {
+    object-fit: cover;
+    width: 100%;
+}
+
+.welcome-img-bg {
+    left: 8%;
+    top: 10%;
+    width: 95%;
+    height: 95%;
+}
+
+.welcome-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-movie-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.main-movie-img:hover {
+    scale: 1.01;
+    transition-duration: 200ms;
+}
+
+.full-width-top {
+    width: 100%;
+    height: 600px;
+    /* Ajusta esta altura según tus necesidades */
+    object-fit: cover;
+}
+
+#arbolito-icon {
+    width: 90px;
+}
+
+.socio-container {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.socio-img-bg {
+    right: -1%;
+    top: 10%;
+    width: 50%;
+    height: 95%;
+}
+
+.socio-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-socios {
+    bottom: -10%;
+}
+
+#ticket-icon {
+    width: 90px;
+}
+
+#coin-icon {
+    width: 90px;
+}
+
+.carousel-img-main {
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 20%;
+    padding-left: 3rem;
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6c9584f75b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="./icon-page.png">
+    <title>NUESTROS RECUERDOS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg border-bottom border-light" id="headerContainer">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-body">
+                    <div class="navbar-nav me-auto">
+                        <a class="nav-link header-text text-black" style="font-size: 26px;" href="./cines.html">Lugares</a>
+                        <a class="nav-link header-text text-black" style="font-size: 26px;" href="./corporativo.html">Nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+                aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand ms-auto" href="./index.html">
+                <img src="./logo-pagina.png" alt="Logo" id="main-logo">
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide heroMainImage" style="background-color: #A0D8EF;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <!-- Imagen para pantallas pequeñas -->
+                        <source media="(max-width: 767.98px)" srcset="./public/cita playa 1.jpg">
+                        <source media="(min-width: 768px)" srcset="./public/cita playa 1.jpg">
+                        <!-- Imagen predeterminada para navegadores que no admiten la etiqueta <picture> -->
+                        <img src="public/cita playa 1.jpg" class="img-fluid d-block mx-auto" alt="Imagen Responsiva"
+                            style="max-height: 500px; object-fit: cover;">
+                    </picture>
+                    <div class="carousel-caption">
+                        <div class="parent-div d-flex align-items-center">
+                            <div class="red-box"></div>
+                            <div class="text-content">
+                                <h1 class="text-start fw-bold movie-title" style="margin: 0px; color:#2E4A62 ;">
+                                    Recuerdos <br> en la Arena:
+                                    Un dia <br> inolvidable</h1>
+                                <!-- aca cambias el texto -->
+                            </div>
+                        </div>
+                        <p class="text-start d-none d-md-block p-3">En dia soleado con muchos recuerdos
+                            <br> la pareja soñada.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <!-- Imagen para pantallas pequeñas -->
+                        <source media="(max-width: 767.98px)" srcset="./public/Fiesta.jpg">
+                        <source media="(min-width: 768px)" srcset="./public/Fiesta.jpg">
+                        <!-- Imagen predeterminada para navegadores que no admiten la etiqueta <picture> -->
+                        <img src="./public/Fiesta.jpg" class="img-fluid d-block mx-auto" alt="Imagen Responsiva"
+                            style="max-height: 500px; object-fit: cover;">
+                    </picture>
+                    <div class="carousel-caption">
+                        <div class="parent-div d-flex align-items-center">
+                            <div class="red-box"></div>
+                            <div class="text-content">
+                                <h1 class="text-start fw-bold movie-title" style="margin: 0px; color:#2E4A62 ;">Noche
+                                    <br> de
+                                    fiesta: <br> Halloween
+                                </h1>
+                                <!-- aca cambias el texto -->
+                            </div>
+                        </div>
+                        <p class="text-start d-none d-md-block p-3">Una chica no buscaba nada real
+                            en una fiesta <br> hasta que un hombre llego y cambio su forma de ver las cosas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <!-- Imagen para pantallas pequeñas -->
+                        <source media="(max-width: 500px)" srcset="./beso juntos.jpg">
+                        <source media="(min-width: 768px)" srcset="./beso juntos.jpg">
+                        <!-- Imagen predeterminada para navegadores que no admiten la etiqueta <picture> -->
+                        <img src="./public/beso juntos.jpg" class="img-fluid d-block mx-auto" alt="Imagen Responsiva"
+                            style="max-height: 500px; object-fit: cover;">
+                    </picture>
+                    <div class="carousel-caption">
+                        <div class="parent-div d-flex align-items-center">
+                            <div class="red-box"></div>
+                            <div class="text-content">
+                                <h1 class="text-start fw-bold movie-title" style="margin: 0px; color:#2E4A62">Cita de
+                                    bosque:<br>besos apasionados</h1>
+                            </div>
+                        </div>
+                        <p class="text-start d-none d-md-block">Una tarde tranquila pero con muchos momentos apasionados
+                            que solo se <br>disfrutan con tu pareja ideal</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container text-center p-5">
+            <div
+                class="row justify-content-center shadow-lg mb-5 rounded gx-3 gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <!-- Filtro por Película -->
+                <div class="col">
+                    <div class="border p-4 rounded h-100">
+                        <h3 class="fw-bold">Por Película</h3>
+                        <select class="form-select p-2 mt-2 dropdown--select p-3" name="movie">
+                            <option selected>Elige la película que quieres ver</option>
+                            <option value="1">Cita de bosque: Besos apasionados</option>
+                            <option value="2">Noche de fiesta: Halloween</option>
+                            <option value="3">Tarde de fútbol: Juega el equipo popular</option>
+                            <option value="4">Nuestra primera cita</option>
+                            <option value="5">Una tarde de dulzura</option>
+                            <option value="6">Un cumpleaños feliz</option>
+                            <option value="7">Recuerdos en la Arena: Un dia inolvidable</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Filtro por Lugar -->
+                <div class="col">
+                    <div class="border p-4 rounded h-100">
+                        <h3 class="fw-bold">Por Lugar</h3>
+                        <select class="form-select p-2 mt-2 dropdown--select p-3" name="place">
+                            <option selected>Elige tu lugar de confianza</option>
+                            <option value="1">Parque Upao</option>
+                            <option value="2">Discoteca AMA</option>
+                            <option value="3">Estadio Mansiche</option>
+                            <option value="4">Mall Plaza</option>
+                            <option value="5">Parque Cocoteros</option>
+                            <option value="6">Reino de la Princesa Deysi</option>
+                            <option value="7">Huanchaco</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Filtro por Fecha -->
+                <div class="col">
+                    <div class="border p-4 rounded h-100">
+                        <h3 class="fw-bold">Por Fecha</h3>
+                        <select class="form-select p-2 mt-2 dropdown--select p-3" name="date">
+                            <option selected>Elige un día</option>
+                            <option value="1">2 de diciembre</option>
+                            <option value="2">31 de octubre</option>
+                            <option value="3">13 de julio</option>
+                            <option value="4">11 de noviembre</option>
+                            <option value="5">19 de noviembre</option>
+                            <option value="6">6 de marzo</option>
+                            <option value="7">3 de diciembre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Botón de Filtrado -->
+                <div class="col-12 ">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary rounded-pill custom-shadow-btn mt-3">
+                            <i class="fa-solid fa-filter"></i> Filtrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content" style="display: none;">
+            <div id="flower-container"></div>
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1" id="image-container"></div>
+            <!-- <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+                <div class="col col-auto"><img class="main-movie-img" src="./public/movies/movie05.jpeg" alt=""></div>
+                <div class="col "><img class="main-movie-img" src="./public/movies/movie05.jpeg" alt=""></div>
+                <div class="col "><img class="main-movie-img" src="./public/movies/movie05.jpeg" alt=""></div>
+                <div class="col "><img class="main-movie-img" src="./public/movies/movie05.jpeg" alt=""></div>
+                <div class="col "><img class="main-movie-img" src="./public/movies/movie05.jpeg" alt=""></div>
+                <div class="col "><img class="main-movie-img" src="./public/movies/movie01.jpeg" alt=""></div>
+            </div> -->
+        </div>
+        <div class="separator"></div>
+
+    </main>
+
+    <div class="separator"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script>
+        const movieSelect = document.querySelector(".dropdown--select[name='movie']");
+        const placeSelect = document.querySelector(".dropdown--select[name='place']");
+        const dateSelect = document.querySelector(".dropdown--select[name='date']");
+        const filterButton = document.querySelector(".custom-shadow-btn");
+        const mainContent = document.querySelector(".main-content");
+
+        function showImages(imageSrcArray) {
+            const imageContainer = document.getElementById('image-container');
+            imageContainer.innerHTML = ''; // Limpia el contenedor antes de añadir nuevas imágenes
+
+            // Recorre el arreglo y crea elementos de imagen
+            imageSrcArray.forEach(src => {
+                const colDiv = document.createElement('div');
+                colDiv.classList.add('col');
+
+                const img = document.createElement('img');
+                img.classList.add('main-movie-img');
+                img.src = src;
+                img.alt = ''; // Puedes agregar un texto alternativo si lo deseas
+
+                colDiv.appendChild(img);
+                imageContainer.appendChild(colDiv);
+            });
+        }
+
+
+        function validateFilters() {
+            const selectedMovie = movieSelect.value;
+            const selectedPlace = placeSelect.value;
+            const selectedDate = dateSelect.value;
+
+            if (selectedMovie !== "Elige la pelicula que quieres ver" &&
+                selectedPlace !== "Elige tu lugar de confianza" &&
+                selectedDate !== "Elige un día") {
+
+                let imagesToShow = [];
+
+                switch (selectedMovie) {
+                    case '1': //CITA DE BOSQUE BESOS APASIONADOS
+                        if (selectedPlace == "1") { // PARQUE UPAO  y 2 de DICIEMBRE
+                            if (selectedDate == "1") { //2 DE DICIEMBRE
+                                imagesToShow = [
+                                    "./public/parque 1.jpg",
+                                    "./public/parque 2.jpg",
+                                    "./public/parque 3.jpg",
+                                    "./public/parque 4.jpg",
+                                    "./public/parque 5.jpg",
+                                    "./public/parque 6.jpg",
+                                ];
+                            } else {
+                                Swal.fire({
+                                    title: 'AVISO',
+                                    text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN LA FECHA.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Entendido'
+                                });
+                            }
+                        }
+                        else {
+                            Swal.fire({
+                                title: 'AVISO',
+                                text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN EL LUGAR.',
+                                icon: 'error',
+                                confirmButtonText: 'Entendido'
+                            });
+                        }
+                        break;
+                    case "2": //NOCHE DE FIESTA
+                        if (selectedPlace == "2") { //DISCO AMA
+                            if (selectedDate == "2") { //31 de octubre
+                                imagesToShow = [
+                                    "./public/Fiesta.jpg",
+                                    "./public/Fiesta1.jpg",
+                                    "./public/Fiesta2.jpg"
+                                ];
+                            } else {
+                                Swal.fire({
+                                    title: 'AVISO',
+                                    text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN LA FECHA.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Entendido'
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                title: 'AVISO',
+                                text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN EL LUGAR.',
+                                icon: 'error',
+                                confirmButtonText: 'Entendido'
+                            });
+                        }
+                        break;
+                    case "3": //Tarde de futbol
+                        if (selectedPlace == "3") { //ESTADIO MANSICHE
+                            if (selectedDate == "3") { //13 de julio
+                                imagesToShow = [
+                                    "./public/estadio1.jpg",
+                                    "./public/estadio2.jpg"
+                                ];
+                            } else {
+                                Swal.fire({
+                                    title: 'AVISO',
+                                    text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN LA FECHA.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Entendido'
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                title: 'AVISO',
+                                text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN EL LUGAR.',
+                                icon: 'error',
+                                confirmButtonText: 'Entendido'
+                            });
+                        }
+                        break;
+                    case "4": //nuestra primera cita
+                        if (selectedPlace == "4") //MALL PLAZA
+                        {
+                            if (selectedDate == "4") { //11 de noviembre
+                                imagesToShow = [
+                                    "./public/Primera cita 2.jpg",
+                                    "./public/Primera cita1.jpg",
+                                    "./public/mall.jpg",
+                                    "./public/Primer mes.jpg",
+                                ];
+                            } else {
+                                Swal.fire({
+                                    title: 'AVISO',
+                                    text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN LA FECHA.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Entendido'
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                title: 'AVISO',
+                                text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN EL LUGAR.',
+                                icon: 'error',
+                                confirmButtonText: 'Entendido'
+                            });
+                        }
+                        break;
+                    case "5": //una tarde de dulzura
+                        if (selectedPlace == "5") { //PARQUE COCOTEROS
+                            if (selectedDate == "5") { //19 de noviembre
+                                imagesToShow = [
+                                    "./public/Pie1.jpg",
+                                    "./public/Pie2.jpg",
+                                    "./public/parquecocotero.jpg"
+                                ];
+                            } else {
+                                Swal.fire({
+                                    title: 'AVISO',
+                                    text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN LA FECHA.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Entendido'
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                title: 'AVISO',
+                                text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN EL LUGAR.',
+                                icon: 'error',
+                                confirmButtonText: 'Entendido'
+                            });
+                        }
+                        break;
+                    case "6": //un cumple feliz
+                        if (selectedPlace == "6") { //reino de la princesa
+                            if (selectedDate == "6") { //6 de marzo
+                                imagesToShow = [
+                                    "./public/Cumpleaños deysi.jpg",
+                                    "./public/salchipaperia.jpg",
+                                    "./public/cita cafeteria.jpg",
+                                    "./public/cita cafeteria1.jpg"
+                                ];
+                            } else {
+                                Swal.fire({
+                                    title: 'AVISO',
+                                    text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN LA FECHA.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Entendido'
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                title: 'AVISO',
+                                text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN EL LUGAR.',
+                                icon: 'error',
+                                confirmButtonText: 'Entendido'
+                            });
+                        }
+                        break;
+                    case "7": //recuerdos en la arena
+                        if (selectedPlace == "7") //huanchaco
+                        {
+                            if (selectedDate == "7") { //3 de diciembre
+                                imagesToShow = [
+                                    "./public/cita playa.jpg",
+                                    "./public/cita playa 1.jpg",
+                                    "./public/playa 2.jpg"
+                                ];
+                            } else {
+                                Swal.fire({
+                                    title: 'AVISO',
+                                    text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN LA FECHA.',
+                                    icon: 'error',
+                                    confirmButtonText: 'Entendido'
+                                });
+                            }
+                        } else {
+                            Swal.fire({
+                                title: 'AVISO',
+                                text: 'TE EQUIVOCASTE DEYSI CHAN FALLASTE EN EL LUGAR.',
+                                icon: 'error',
+                                confirmButtonText: 'Entendido'
+                            });
+                        }
+                        break;
+                    default:
+                        Swal.fire({
+                            title: 'AVISO',
+                            text: 'TE EQUIVOCASTE CIELO.',
+                            icon: 'error',
+                            confirmButtonText: 'Entendido'
+                        });
+                }
+
+                mainContent.style.display = "block";
+                showImages(imagesToShow);
+            } else {
+                Swal.fire({
+                    title: 'AVISO',
+                    text: 'TIENES QUE SELECCIONAR LOS 3 FILTROS CIELO.',
+                    icon: 'error',
+                    confirmButtonText: 'Entendido'
+                });
+            }
+        }
+
+        filterButton.addEventListener("click", (e) => {
+            e.preventDefault();
+            validateFilters();
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const carouselElement = document.getElementById('carouselExampleCaptions');
+            const carousel = new bootstrap.Carousel(carouselElement, {
+                interval: 2000,
+                wrap: true
+            });
+
+            carousel.cycle();
+
+            carouselElement.addEventListener('slid.bs.carousel', function () {
+                carousel.cycle();
+            });
+        });
+    </script>
+</body>
+
+</html>
